@@ -1,0 +1,720 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="euc-kr" />
+	<meta http-equiv="content-type" content="text/html; charset=euc-kr" />
+	<meta http-equiv="x-dns-prefetch-control" content="on" />
+	<link rel="dns-prefetch" href="//image.kangcom.com" />
+	<link rel="dns-prefetch" href="//image3.kangcom.com" />
+	<link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
+	<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+	<meta name="google-site-verification" content="htIs7dHpmwTsnu80zA7uovWB8MOW5C9KembN12Hg9X8" />
+	<meta name="title" content="강컴닷컴" />
+	<meta name="description" content="국내도서, 영어원서, 외국도서 직수입 판매, 구매대행 전문 인터넷서점." />
+	<meta property="og:image" content="http://image.kangcom.com/site/images/kangcom_200x200.png" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,requiresActiveX=true" />
+	<title>지식발전소 강컴닷컴</title>
+	<link rel="stylesheet" type="text/css" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="/css/global.css" />
+	<link href="http://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
+	<!--[if IE 6]>
+	<link rel=stylesheet type="text/css" href="/images/style/kangcom_v6.css"/>
+	<![endif]-->
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<script type="text/javascript">
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-36152248-1', 'auto');ga('require', 'linkid', 'linkid.js');
+	
+	  ga('send', 'pageview');
+	
+	</script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="/js/lib.js"></script>
+<script type="text/javascript">
+	function Rimg(){
+//		var how_many_ads = 2;
+		//숫자는 이미지의 수만큼..
+//		var now = new Date()
+//		var sec = now.getSeconds()
+//		var ad = sec % how_many_ads;
+//		ad +=1;
+
+//		if (ad==1) {
+//		url="http://kangcom.com/nc_check/" ;  //http://kangcom.com/nc_check/
+//		img="http://image.kangcom.com/site/images/banner/top_banner_nc.jpg";
+//		width="170";
+//		height="55";
+//		}
+
+//		document.write('<a href=\"' + url + '\" target=\"_self\">');
+//		document.write('<img src=\"' + img + '\" width=\"' + width + '\" height=\"' + height + '\" ')
+	}
+
+	function Rimg_daum(){
+		var how_many_ads = 1;
+		//숫자는 이미지의 수만큼..
+		var now = new Date()
+		var sec = now.getSeconds()
+		var ad = sec % how_many_ads;
+		ad +=1;
+		
+		document.write('<a href=\"' + url + '\" target=\"_self\">');
+		document.write('<img src=\"' + img + '\" width=\"' + width + '\" height=\"' + height + '\" ')
+	}
+	</script>
+	<script type="text/javascript">
+		var kangcom = {
+			bindImgError: function(el, url) {
+				$(el).error(function () { $(this).unbind('error').attr('src', url); });
+			}
+		}
+		$(function() {			
+			kangcom.bindImgError('.img-bpic', '/img/book/no_b_pic.jpg');
+			kangcom.bindImgError('.img-spic', '/img/book/no_s_pic.jpg');
+			kangcom.bindImgError('.img-lpic', '/img/book/no_l_pic.jpg');
+			$('img').not('.img-bpic').not('.img-lpic').not('.img-spic').not('.lazy').error(function () { $(this).hide(); });
+
+			$('#ranked-keywords-list').append('<li><a href="/search/?q=ai" onclick="javascript:goSearch(\'ai\');return false;" style="color:#ffffff;">ai</a></li>');
+			$('#ranked-keywords-list').append('<li><a href="/search/?q=effective" onclick="javascript:goSearch(\'effective\');return false;" style="color:#ffffff;">effective</a></li>');
+			$('#ranked-keywords-list').append('<li><a href="/search/?q=java" onclick="javascript:goSearch(\'java\');return false;" style="color:#ffffff;">java</a></li>');
+			$('#ranked-keywords-list').append('<li><a href="/search/?q=jquery" onclick="javascript:goSearch(\'jquery\');return false;" style="color:#ffffff;">jquery</a></li>');
+			$('#ranked-keywords-list').append('<li><a href="/search/?q=spring" onclick="javascript:goSearch(\'spring\');return false;" style="color:#ffffff;">spring</a></li>');
+			$('#ranked-keywords-list').append('<li><a href="/search/?q=9791185333069" onclick="javascript:goSearch(\'9791185333069\');return false;" style="color:#ffffff;">9791185333069</a></li>');
+			$('#ranked-keywords-list').append('<li><a href="/search/?q=c" onclick="javascript:goSearch(\'c\');return false;" style="color:#ffffff;">c</a></li>');
+			$('#ranked-keywords-list').append('<li><a href="/search/?q=code" onclick="javascript:goSearch(\'code\');return false;" style="color:#ffffff;">code</a></li>');
+			$('#ranked-keywords-list').append('<li><a href="/search/?q=Html5" onclick="javascript:goSearch(\'Html5\');return false;" style="color:#ffffff;">Html5</a></li>');
+			$('#ranked-keywords-list').append('<li><a href="/search/?q=WPF" onclick="javascript:goSearch(\'WPF\');return false;" style="color:#ffffff;">WPF</a></li>');
+			$('#ranked-keywords-list').append('<li><a href="/search/?q=AWS" onclick="javascript:goSearch(\'AWS\');return false;" style="color:#ffffff;">AWS</a></li>');
+			$('#ranked-keywords-list').append('<li><a href="/search/?q=genetic" onclick="javascript:goSearch(\'genetic\');return false;" style="color:#ffffff;">genetic</a></li>');
+			$('#ranked-keywords-list').append('<li><a href="/search/?q=lua" onclick="javascript:goSearch(\'lua\');return false;" style="color:#ffffff;">lua</a></li>');
+			$('#ranked-keywords-list').append('<li><a href="/search/?q=MYSQL" onclick="javascript:goSearch(\'MYSQL\');return false;" style="color:#ffffff;">MYSQL</a></li>');
+			$('#ranked-keywords-list').append('<li><a href="/search/?q=qt" onclick="javascript:goSearch(\'qt\');return false;" style="color:#ffffff;">qt</a></li>');
+			$('#ranked-keywords-list').append('<li><a href="/search/?q=react" onclick="javascript:goSearch(\'react\');return false;" style="color:#ffffff;">react</a></li>');
+			$('#ranked-keywords-list').append('<li><a href="/search/?q=8809176442018" onclick="javascript:goSearch(\'8809176442018\');return false;" style="color:#ffffff;">8809176442018</a></li>');
+			$('#ranked-keywords-list').append('<li><a href="/search/?q=3??" onclick="javascript:goSearch(\'3??\');return false;" style="color:#ffffff;">3??</a></li>');
+			$('#ranked-keywords-list').append('<li><a href="/search/?q=1843397994" onclick="javascript:goSearch(\'1843397994\');return false;" style="color:#ffffff;">1843397994</a></li>');
+			$('#ranked-keywords-list').append('<li><a href="/search/?q=freud" onclick="javascript:goSearch(\'freud\');return false;" style="color:#ffffff;">freud</a></li>');
+			var keywords = '';
+
+			keywords += '<a href="/search/?q=jsp" onclick="javascript:goSearch(\'jsp\');return false;">jsp</a>,&nbsp;';
+			keywords += '<a href="/search/?q=PHP" onclick="javascript:goSearch(\'PHP\');return false;">PHP</a>,&nbsp;';
+			keywords += '<a href="/search/?q=javascript" onclick="javascript:goSearch(\'javascript\');return false;">javascript</a>,&nbsp;';
+			keywords += '<a href="/search/?q=ios" onclick="javascript:goSearch(\'ios\');return false;">ios</a>';
+			$('#ranked-keywords-top').html(keywords);
+			$('#ranked-keywords').vTicker();
+			//if (!$.cookie("hide_notice")) {
+			//	noticeWindow = window.open('/notice/notice_20170124.html','notice','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes,width=500,height=630,top=10,left=100');
+			//	noticeWindow.opener = self;
+			//}
+    });
+		
+		var search_bg_targeted = -1;
+
+		function getAbsoluteTop(oNode) { // 절대 높이 계산
+			var oCurrentNode=oNode;
+			var iTop=0;
+			while(oCurrentNode.tagName!="BODY") {
+				iTop+=oCurrentNode.offsetTop;
+				oCurrentNode=oCurrentNode.offsetParent;
+
+			}
+			return iTop;
+		}
+
+		function getAbsoluteLeft(oNode) { // 절대 좌측 계산
+			var oCurrentNode=oNode;
+			var iLeft=0;
+			while(oCurrentNode.tagName!="BODY"){
+				iLeft+=oCurrentNode.offsetLeft;
+				oCurrentNode=oCurrentNode.offsetParent;
+			}
+			return iLeft;
+		}
+
+		function isIE() {
+			if (navigator.userAgent.indexOf("MSIE") >= 0) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+
+		function search_strip(a) {
+			if (a) {
+				if ((a == "K" && document.S_frm.q.value != "") || (a == "M")) {
+					document.S_frm.q.style.backgroundImage = '';
+					search_bg_targeted = -1;
+				}
+			} else {
+				document.S_frm.q.style.backgroundImage = '';
+				search_bg_targeted = -1;
+			}
+		}
+
+		function searchsubmit() {
+
+			if (navigator.userAgent.indexOf('MSIE') > 0){
+					var check = true;
+					var sugCurPos = document.frames["hFrame"].curCursorPos;
+
+					if(sugCurPos > -1){
+						var skucode = document.frames["hFrame"].req.responseXML.getElementsByTagName("items/sku")(sugCurPos).firstChild.nodeValue;
+						if (skucode != "") {
+						  document.location.href = "/sub/view.asp?sku="+skucode;
+						  check = false;
+						} else {
+							goSearchMain();
+						}
+					}else {
+						var skucode = document.S_frm.sku.value;
+						if (skucode != ""){
+							document.location.href = "/sub/view.asp?sku="+skucode;
+						  check = false;
+						} else {
+							goSearchMain();
+						}
+					}
+					return check;
+			} else {
+				goSearchMain();
+			}
+		}
+
+
+		function goSearchMain(){
+			var frm = document.S_frm;
+			frm.submit();
+		}
+
+		function validate_numeric_data(urstr)
+		{
+		  var i; var result;
+		  for(i=0; i<urstr.length; i++) {
+			if (
+			  ((urstr.charAt(i) >= "0") && (urstr.charAt(i) <= "9"))
+			  )
+				result = true;
+			  else
+				return false;
+		  }
+		  if(result == true)
+			return true;
+		}
+
+
+		function trim(str)
+		{
+			str = str.replace(/(^\s*)|(\s*$)/g,"");
+			return str;
+		}
+
+
+		function s_option(i){
+			var frm = document.S_frm;
+		  var s_option = i;
+		  frm.s_option.value = s_option;
+		}
+
+		//셀렉트박스
+
+			var select = {
+				action : function(el,state){
+					// state = 0 or 1
+					var SelectElement = document.getElementById(el.id);
+					var ListElement = SelectElement.getElementsByTagName("ul")[0];
+					var ActionElement = ListElement.getElementsByTagName("a");
+
+					if(ListElement.style.display == "block"){
+						select.close(ListElement);
+						return false;
+					} else {
+						ListElement.style.display = "block";
+					}
+
+					var strSelected = SelectElement.getElementsByTagName("a")[0];
+					strSelected.focus();
+					for(var i=0; i<ActionElement.length; i++){
+						if(strSelected.firstChild.nodeValue == ActionElement[i].firstChild.nodeValue){
+							select.elementClass = ActionElement[i];
+							select.elementClass.className = "selected";
+							ActionElement[i].onclick = function(){
+								return false;
+							}
+						} else {
+							ActionElement[i].onclick = function(){
+								if(this.href.indexOf("javascript")>-1){
+									eval(this.href);
+								} else if(this.href == "" || this.href.indexOf("#")>-1){
+								} else if(this.target == "_blank"){
+									window.open(this.href);
+								} else {
+									location.href(this.href);
+								}
+								if(state==1){
+									strSelected.firstChild.nodeValue = this.firstChild.nodeValue;
+								}
+								return false;
+							}
+						}
+						ActionElement[i].onmouseover = function(){
+							select.elementClass.className = "";
+							this.className = "selected";
+							select.elementClass = this;
+						}
+					}
+
+					SelectElement.onmouseover = function(){ strSelected.onblur = function(){}}
+					SelectElement.onmouseout = function(){ strSelected.onblur = function(){ select.close(ListElement); }}
+
+				},
+				close : function(el){
+					select.elementClass.className = "";
+					el.style.display = "none";
+					return false;
+				}
+			}
+
+		function open_action()
+		{
+		   document.getElementById("transcheck").style.visibility="visible";
+		}
+		function close_action()
+		{
+		   document.getElementById("transcheck").style.visibility="hidden";
+		}
+
+		$(document.S_frm).ready
+		(
+		   function()
+		   {
+			  $("#trans_gubun td").css({"cursor":"hand","width":"60"}).mouseover(function(){this.style.background='#ffffff';})
+			  .mouseout(function(){this.style.background='#ffffff';}).click(trans_gubun_Change);
+					$($("#trans_gubun td").get(0)).click();
+		   }
+
+		)
+
+		function trans_gubun_Change()
+		{
+		   close_action();
+		   var transcd = "";
+		   var transname = $(this).text();
+
+		   switch(transname)
+		   {
+			  case "전체":
+				 transcd = "";
+				 break;
+					case "국내도서":
+				 transcd = "0";
+				 break;
+					case "외국도서":
+				 transcd = "1";
+				 break;
+		   }
+
+			 document.S_frm.f.value = transcd;
+
+			 $("#transselect").empty().html(transname);
+			 //$("#trans_gubun td").get(0).click();
+			 //alert(document.S_frm.s_option.value);
+		}
+
+		function goSearch(t){
+			var frm = document.S_frm;
+			frm.q.value = t;
+			frm.submit();			
+		}
+
+	</script>
+</head>
+<body>
+
+<div id="top_box">
+  <table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><table width="980" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="right"><table border="0" cellspacing="0" cellpadding="0" class="mgtop10">
+                <tr>
+                  <td class="topmenu">
+                  	
+                    <a href="https://www.kangcom.com/member/login.asp" class="topmenu">로그인</a> ㅣ
+                    
+                    <a href="https://www.kangcom.com/member/m_certif.asp" class="topmenu">회원가입</a> ㅣ
+                    
+                    <a href="https://www.kangcom.com/basket/cart.asp?tC=1" class="topmenu">장바구니</a> ㅣ <a href="/customer/faq/" class="topmenu">고객센터</a> ㅣ <a href="https://kangcom.com/mypage/" class="topmenu">마이페이지</a> ㅣ <a href="/company/history.asp" class="topmenu">회사소개</a></td>
+                </tr>
+              </table></td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr>
+      <td><table width="980" border="0" cellspacing="0" cellpadding="0" class="mgtop10">
+          <tr>
+            <td width="150"><a href="http://www.kangcom.com/main/default.asp" onFocus="this.blur();"><img src="http://image.kangcom.com/site/images/main/new_top_logo.jpg" width="150" height="49" border="0" alt="kangcom"/></a></td>
+            <td width="660" align="center" valign="top" style="padding-top:5px;">
+<table width="424" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="20" align="center" id="ranked-keywords-top">
+    
+    </td>
+  </tr>
+  <tr>
+    <td height="40" valign="top"><!--검색 시작-->
+
+<table width="424" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#da350f">
+    <tr>
+      <td height="20" bgcolor="#FFFFFF" style="border:5px solid #da350f; padding:5px 10px 5px 10px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="60"><div style="position:relative;">
+                <table cellpadding="0" cellspacing="0" width="60" height="20">
+                  <tr>
+                    <td align="left" background="/images/sub/top_selectbox.gif" id="transselect" style="padding: 2px 0px 0px 10px;" onMouseOver="open_action()" onMouseOut="close_action()"><strong>전체</strong></td>
+                  </tr>
+                </table>
+                <div id="transcheck" style="position:absolute;left:0;top:20px;visibility:hidden; background-color:#FFFFFF; border:1px solid #dddddd;" onMouseOver="open_action();" onMouseOut="close_action();">
+                  <table id="trans_gubun" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td style="padding: 2px 0px 0px 9px;" align="left">전체</td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 2px 0px 0px 9px;" align="left" >국내도서</td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 2px 0px 0px 9px;" align="left">외국도서</td>
+                    </tr>
+                  </table>
+                </div>
+              </div></td>
+            <td width="18" align="left"></td>
+            <td width="5" align="left"><table width="2" height="15" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td bgcolor="#da350f"></td>
+                </tr>
+              </table></td>
+            <td width="250" align="left"><form name=S_frm method="get" action="http://www.kangcom.com/search/" onSubmit="return searchsubmit()">
+			<input id="q" autocomplete="on" name="q" type="text" title="검색어 입력" style="border:0; padding:2px; font-size:16px; font-weight:bold; width:95%; height:100%;" tabindex="1" accesskey="s" onKeyUp="search_strip('K');" onMouseDown="search_strip('M');" />
+			<!--autocomplete="off"-->
+			<input type="hidden" name="f" />
+			</form></td>
+            <td width="7" align="right">
+			
+            </td>
+          </tr>
+        </table></td>
+      <td width="47" bgcolor="#da350f" style="border:5px solid #da350f;"><a href="javascript:goSearchMain();"><img src="http://image.kangcom.com/site/images/main/top_search_btn.jpg" width="47" height="30" border="0" /></a></td>
+    </tr>	
+</table>
+<script type="text/javascript">
+<!--
+function SchSug_setcoor(id,url,width) {
+	if (navigator.userAgent.indexOf('MSIE') > 0){
+		document.write("<div id=SchSug>");
+	  document.write("<iframe id=hFrame name=hFrame src='"+url+"' style='width:"+width+"px; height:500px; display:none; position:absolute; z-index:1;' frameborder=0 scrolling=no></iframe>");
+		document.write("</div>");
+		document.write("<div id=bookimage></div>");
+		//document.write("<div id=set_sugicn style='width:200px; height:200px; position:absolute; left:0px; top:70px; z-index:1;'><img src='/images/main/top_search_arrow2.gif' width=7 style='cursor:pointer' id=sugicn></div>");
+		//document.write("<div id=set_sugicnUP style='width:200px; height:200px; position:absolute; left:0px; top:70px; z-index:1;'><img src='/images/main/top_search_arrow.gif' width=7 style='cursor:pointer' id=sugicnUP></div>");
+
+		var obj = document.getElementById("SchSug");
+		obj.style.top = getAbsoluteTop(document.getElementById("q")) + document.getElementById("q").offsetHeight;
+		obj.style.left = getAbsoluteLeft(document.getElementById("q")) - 0;
+		obj.style.zIndex = "1";
+
+//		var obj_set_sugicn = document.getElementById("set_sugicn");
+//		obj_set_sugicn.style.top = getAbsoluteTop(document.getElementById("q")) + 8;
+//		obj_set_sugicn.style.left = getAbsoluteLeft(document.getElementById("q")) + document.getElementById("q").offsetWidth - 200;
+//
+//		var obj_set_sugicnUP = document.getElementById("set_sugicnUP");
+//		obj_set_sugicnUP.style.top = getAbsoluteTop(document.getElementById("q")) + 8;
+//		obj_set_sugicnUP.style.left = getAbsoluteLeft(document.getElementById("q")) + document.getElementById("q").offsetWidth - 200;
+//
+		//if(isIE()) document.getElementById('set_sugicn').style.display = '';
+	}
+
+}
+
+//if (navigator.userAgent.indexOf('MSIE') > 0){
+//	SchSug_setcoor('q','/search/ajax_suggest.asp',424);
+//}
+//-->
+</script>
+</td>
+  </tr>
+</table>
+
+            </td>
+
+				<td width="170" height="70" valign="bottom"><script type="text/javascript">Rimg()</script></td>
+
+          </tr>
+        </table></td>
+    </tr>
+</table>
+</div>
+<div id="main-nav" class="mgtop10">
+<table width="980" border="0" cellspacing="0" cellpadding="0" style="margin: 0 auto">
+  <tr>
+	<td width="250" style="color:#ffffff; letter-spacing:-2px; font-weight:bold;">&nbsp;<!--main event--></td>
+	<td style="padding-left:45px;"><table border="0" align="left" cellpadding="0" cellspacing="0">
+		<tr>
+		  <td width="79"><a href="http://www.kangcom.com/sub/?topId=2"><img src="http://image.kangcom.com/site/images/main/topmenu01.jpg" width="79" height="42" border="0" /></a></td>
+		  <td width="2"><img src="http://image.kangcom.com/site/images/main/topmenu_line.jpg" width="2" height="42" /></td>
+		  <td width="77"><a href="http://www.kangcom.com/sub/outside.asp?topId=3"><img src="http://image.kangcom.com/site/images/main/topmenu02.jpg" width="77" height="42" border="0" /></a></td>
+		  <td width="2"><img src="http://image.kangcom.com/site/images/main/topmenu_line.jpg" width="2" height="42" /></td>
+		  <td width="65"><a href="http://www.kangcom.com/best/?topId=4"><img src="http://image.kangcom.com/site/images/main/topmenu03.jpg" width="65" height="42" border="0" /></a></td>
+		  <td width="2"><img src="http://image.kangcom.com/site/images/main/topmenu_line.jpg" width="2" height="42" /></td>
+		  <td width="50"><a href="http://www.kangcom.com/new/?topId=5"><img src="http://image.kangcom.com/site/images/main/topmenu04.jpg" width="50" height="42" border="0" /></a></td>
+		  <td width="2"><img src="http://image.kangcom.com/site/images/main/topmenu_line.jpg" width="2" height="42" /></td>
+		  <td width="65"><a href="http://www.kangcom.com/codi/?topId=6"><img src="http://image.kangcom.com/site/images/main/topmenu05.jpg" width="65" height="42" border="0" /></a></td>
+		  <td width="2"><img src="http://image.kangcom.com/site/images/main/topmenu_line.jpg" width="2" height="42" /></td>
+		  <td><a href="http://www.kangcom.com/community/?topId=7"><img src="http://image.kangcom.com/site/images/main/topmenu06.jpg" width="78" height="42" border="0" /></a></td>
+		</tr>
+	  </table></td>
+	<!--인기 검색어 -->
+	<td width="120" align="right"><a href="#" class="topsearch"><strong>인기검색어</strong></a>&nbsp;</td>
+	<td width="200" >
+	  <div id="ranked-keywords">
+		<ul id="ranked-keywords-list"></ul>
+	  </div></td>
+  </tr>
+</table>
+</div>
+<script language="javascript" src="/my/js/viewBlg.js"></script>
+
+<form name="zzimFrm" method="post" action="/member/login.asp">
+<input type="hidden" name="goBlogUrl" value="popup4">
+<input type="hidden" name="sUrl" value="http://www.kangcom.com/company/history.asp?">
+</form>
+<script type="text/javascript">
+<!--
+
+	function go_book(sku) {
+		document.location.href = "/sub/view.asp?topid=1&sku="+sku;
+	}
+
+	function go_book_new(sku)
+	{
+	 window.open("/sub/view.asp?sku="+sku,"new", "width=900, height=700, left=30, top=30, resizable=yes, menubar=yes, directories=yes, location=yes, toolbar=yes");
+	}
+
+	function go_pub(corp) {
+		document.location.href = "/sub/pub_list.asp?topid=1&corp_id="+corp;
+	}
+
+	function go_aut(author) {
+		document.location.href = "/sub/auth_list.asp?topid=1&author_id="+author;
+	}
+
+	function go_cart(sku) {
+		document.location.href = "https://www.kangcom.com/basket/cart.asp?topid=1&sku="+sku;
+	}
+
+	function go_cart_direct(sku, cartcnt) {
+		document.location.href = "https://www.kangcom.com/basket/cart_direct.asp?topid=1&sku="+sku+"&cartcnt="+cartcnt ;
+	}
+
+//-->
+</script>
+
+
+<div id="big_wrapper" align="center">
+  <div id="new_wrapper">
+    
+<div id="new_left_wrapper">
+  <div id="company_left_wrapper">
+    <div id="company_left_title"><a href="/company/history.asp"><img src="http://image.kangcom.com/site/images/company/company_lefmenu_title.gif" border="0"/></a></div>
+    <li><a href="/company/out.asp"><img src="http://image.kangcom.com/site/images/company/company_lefmenu01.gif" width="57" height="12" border="0" alt="밖에서 보기"/></a></li>
+    <li><a href="/company/history.asp"><img src="http://image.kangcom.com/site/images/company/company_lefmenu02.gif" width="68" height="13" border="0" alt="강컴 히스토리"/></a></li>
+    <li><a href="/company/contact.asp"><img src="http://image.kangcom.com/site/images/company/company_lefmenu03.gif" width="46" height="9" border="0" alt="contact"/></a></li>
+  </div>
+</div>
+
+    <div id="body_795_wrapper" >
+      <table width="795" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td align="left" class="a_title2"><img src="http://image.kangcom.com/site/images/company/company_history_title.gif"  border="0" alt="강컴 히스토리" /></td>
+        </tr>
+	  </table>
+        <table width="795" border="0" cellspacing="0" cellpadding="0" class="mgtop20">
+	  <tr>
+		<td width="100" rowspan="2" valign="top"><img src="http://image.kangcom.com/site/images/company/company_history01.gif" /></td>
+		<td width="695" height="15" align="left" valign="top"><img src="http://image.kangcom.com/site/images/company/company_history01_text01.gif" /></td>
+	  </tr>
+	  <tr>
+		<td height="35" align="left" valign="top"><img src="http://image.kangcom.com/site/images/company/company_history01_text02.gif" /></td>
+	  </tr>
+	  <tr>
+		<td valign="top"><img src="http://image.kangcom.com/site/images/company/company_history02.gif" /></td>
+		<td height="45" align="left" valign="top"><img src="http://image.kangcom.com/site/images/company/company_history02_text01.gif" /></td>
+	  </tr>
+	  <tr>
+		<td valign="top"><img src="http://image.kangcom.com/site/images/company/company_history03.gif" /></td>
+		<td height="45" align="left" valign="top"><img src="http://image.kangcom.com/site/images/company/company_history03_text01.gif" /></td>
+	  </tr>
+	  <tr>
+		<td valign="top"><img src="http://image.kangcom.com/site/images/company/company_history04.gif" /></td>
+		<td height="45" align="left" valign="top"><img src="http://image.kangcom.com/site/images/company/company_history04_text01.gif" /></td>
+	  </tr>
+	  <tr>
+		<td valign="top"><img src="http://image.kangcom.com/site/images/company/company_history05.gif" /></td>
+		<td height="45" align="left" valign="top"><img src="http://image.kangcom.com/site/images/company/company_history05_text01.gif" /></td>
+	  </tr>
+	  <tr>
+		<td valign="top"><img src="http://image.kangcom.com/site/images/company/company_history06.gif" /></td>
+		<td height="45" align="left" valign="top"><img src="http://image.kangcom.com/site/images/company/company_history06_text01.gif" /></td>
+	  </tr>
+	  <tr>
+		<td valign="top"><img src="http://image.kangcom.com/site/images/company/company_history07.gif" /></td>
+		<td height="45" align="left" valign="top"><img src="http://image.kangcom.com/site/images/company/company_history07_text01.gif" /></td>
+	  </tr>
+	  <tr>
+		<td valign="top"><img src="http://image.kangcom.com/site/images/company/company_history08.gif" /></td>
+		<td height="15" align="left" valign="top"><img src="http://image.kangcom.com/site/images/company/company_history08_text01.gif" /></td>
+	  </tr>
+	  <tr>
+		<td valign="top">&nbsp;</td>
+		<td height="45" align="left" valign="top"><img src="http://image.kangcom.com/site/images/company/company_history08_text02.gif" /></td>
+	  </tr>
+	  <tr>
+		<td valign="top"><img src="http://image.kangcom.com/site/images/company/company_history09.gif" /></td>
+		<td height="15" align="left" valign="top"><img src="http://image.kangcom.com/site/images/company/company_history09_text01.gif" /></td>
+	  </tr>
+	  <tr>
+		<td valign="top">&nbsp;</td>
+		<td height="45" align="left" valign="top"><a href="#" onclick="javascript:window.open('confirm_pop.asp','confirm','width=550,height=805,scrollbars=no');"><img src="http://image.kangcom.com/site/images/company/company_history09_btn.gif" alt="경영혁신형 중소기업 인증서" border="0" /></a></td>
+	  </tr>
+	  <tr>
+		<td valign="top"><span style="color: #D52F07;font-size: 17px;font-style: italic;">2015.1</span></td>
+		<td height="15" align="left" valign="top"><span style="color: #555">파주출판단지로 사옥이전<br/>'와우북'으로 상호변경</span></td>
+	  </tr>
+	  </table>
+	  <table style="margin-top: 20px;" align="left">
+		  <tr>
+			<td valign="bottom" colspan="2" height="20" align="left" style="font-weight:bold; border-bottom: 1px solid silver">주식회사 와우북</td>
+		  </tr>
+		  <tr><td colspan="2" height="2"></td></tr>
+		  <tr>
+			<td valign="top" width="100" style="font-weight:bold">사업자등록번호</td>
+			<td height="20" align="left" valign="top">220-86-40594</td>
+		  </tr>
+		  <tr>
+			<td valign="top" style="font-weight:bold">대표이사</td>
+			<td height="20" align="left" valign="top">황인석</td>
+		  </tr>
+		  <tr>
+			<td valign="top" style="font-weight:bold">주소</td>
+			<td height="20" align="left" valign="top">경기도 파주시 회동길 445-4, 201호</td>
+		  </tr>
+		  <tr>
+			<td valign="top" style="font-weight:bold">대표전화</td>
+			<td height="20" align="left" valign="top">1644-3752</td>
+		  </tr>
+		  <tr>
+			<td valign="top" style="font-weight:bold">FAX</td>
+			<td height="20" align="left" valign="top">031-955-9750</td>
+		  </tr>
+		</table>
+
+    </div>
+  </div>
+</div>
+<script language="javascript">
+<!--
+function popWinEmail(){
+newwin = window.open("/popup/refusal_email.asp","newwindow","height=230,width=450,location=0,menubar=0,resizable=0,scrollbars=no, status=0,titlebar=0,toolbar=0,screeny=0,left=0,top=0")
+}
+//-->
+</script>
+
+<div id="bt_wrapper">
+	<div id="bt_swf" align="center" >
+  <table width="980" border="0" align="center" cellpadding="0" cellspacing="0" >
+    <tr>
+      <td height="30"></td>
+    </tr>
+    <tr>
+      <td height="5" bgcolor="#dddddd"></td>
+    </tr>
+    <tr>
+      <td height="20"><table width="980" border="0" cellpadding="0" cellspacing="0" class="mgtop10">
+          <tr>
+            <td width="153"><img src="http://image.kangcom.com/site/images/main/logo_bottom.gif" /></td>
+            <td width="657" valign="top"><table width="600"  border="0" align="left" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td height="41" align="left"><table width="600" border="0" align="left" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td width="36"><a href="http://www.kangcom.com/basket/cart.asp?tC=1"><img src="http://image.kangcom.com/site/images/main/footer_mn01.gif" width="36" height="11" class="mgleftright12" border="0"/></a></td>
+                        <td width="1"><img src="http://image.kangcom.com/site/images/main/footer_mn_line.gif" width="1" height="7" /></td>
+                        <td width="45"><a href="https://www.kangcom.com/mypage/"><img src="http://image.kangcom.com/site/images/main/footer_mn02.gif" width="45" height="11" class="mgleftright12" border="0"/></a></td>
+                        <td width="1"><img src="http://image.kangcom.com/site/images/main/footer_mn_line.gif" width="1" height="7" /></td>
+                        <td width="37"><a href="/customer/faq/"><img src="http://image.kangcom.com/site/images/main/footer_mn03.gif" alt="" width="37" height="11" class="mgleftright12" border="0"/></a></td>
+                        <td width="1"><img src="http://image.kangcom.com/site/images/main/footer_mn_line.gif" width="1" height="7" /></td>
+                        <td width="36"><a href="/customer/cooperation/"><img src="http://image.kangcom.com/site/images/main/footer_mn04.gif" width="36" height="11" class="mgleftright12" border="0"/></a></td>
+                        <td width="1"><img src="http://image.kangcom.com/site/images/main/footer_mn_line.gif" width="1" height="7" /></td>
+                        <td width="54"><a href="/customer/alotOrder/info.asp"><img src="http://image.kangcom.com/site/images/main/footer_mn05.gif" width="54" height="11" class="mgleftright12" border="0"/></a></td>
+                        <td width="1"><img src="http://image.kangcom.com/site/images/main/footer_mn_line.gif" width="1" height="7" /></td>
+                        <td width="36"><a href="/customer/rule/"><img src="http://image.kangcom.com/site/images/main/footer_mn06.gif" width="36" height="11" class="mgleftright12" border="0"/></a></td>
+                        <td width="1"><img src="http://image.kangcom.com/site/images/main/footer_mn_line.gif" width="1" height="7" /></td>
+                        <td width="73"><a href="/customer/rule/"><img src="http://image.kangcom.com/site/images/main/footer_mn07.gif" alt="" width="73" height="11" class="mgleftright12" border="0"/></a></td>
+                        <td width="1"><img src="http://image.kangcom.com/site/images/main/footer_mn_line.gif" width="1" height="7" /></td>
+                        <td width="82"><a href="javascript:popWinEmail();"><img src="http://image.kangcom.com/site/images/main/footer_mn08.gif" width="82" height="11" class="mgleftright12" border="0" alt="이메일주소수집거부" /></a></td>
+                        <td width="1"><img src="http://image.kangcom.com/site/images/main/footer_mn_line.gif" width="1" height="7" /></td>
+                        <td><a href="/rss/rss_default.asp"><img src="http://image.kangcom.com/site/images/sub/btn_rss.gif" width="35" height="14" border="0" class="mgleftright12"/></a></td>
+                      </tr>
+                    </table></td>
+                </tr>
+                <tr>
+                  <td height="1" bgcolor="#dddddd"></td>
+                </tr>
+				<!--.footer-links ul{display:inline-block;*display:inline;*zoom:1;list-style:none;width:716px}
+				.footer-links li{display:inline-block;*display:inline;*zoom:1}
+				.footer-links li+li:before{content:'|'}-->
+                <tr>
+                  <td align="left">				  
+					<div class="footer-info">
+						<div class="footer-info-customer">
+							<ul>
+								<li class="footer-info-title">고객센터</li>
+								<li class="footer-info-off">토요일 및 공휴일 휴무</li>
+								<li>운영시간: 평일 오전 11시~오후 6시</li>
+								<li>전화번호: <strong>1644-3752</strong></li>
+								<li>팩스: 031-955-9750</li>								
+							</ul>
+						</div>
+						<div class="footer-info-company">
+							<ul>
+								<li class="footer-info-title">(주)와우북</li>								
+								<li>대표이사: 황인석</li>								
+								<li>사업자등록번호: 220-86-40594 <a href="http://www.ftc.go.kr/info/bizinfo/communicationList.jsp?searchKey=04&searchVal=2208640594" onclick="window.open('http://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=2208640594','wowbook','width=750,height=700');return false;" target="_blank">[확인]</a></li>
+								<li>통신판매업신고번호: 2015-경기파주-6120</li>
+								<li>주소: 경기도 파주시 회동길 445-4 201호</li>
+							</ul>
+						</div>
+						<div class="footer-info-copy">Wowbook, Inc. &copy; 2002-2015</div>
+					</div>
+				  </td>
+                </tr>
+              </table></td>
+            <td width="170" align="right" valign="middle">
+			<a href="https://mark.inicis.com/mark/popup_v1.php?no=70083&st=1417493988" title="클릭하시면 이니시스 결제시스템의 유효성을 확인하실 수 있습니다." onclick="javascript:window.open(this.href,'mark','scrollbars=no,resizable=no,width=565,height=683');return false;"><img src="http://image.inicis.com/mkt/certmark/inipay/inipay_60x60_gray.png" border="0" /></a>
+			<!--<a href="https://mark.inicis.com/mark/escrow_popup.php?no=70094&st=1417501844" title="클릭하시면 이니시스 결제시스템의 유효성을 확인하실 수 있습니다." onclick="javascript:window.open(this.href,'mark','scrollbars=no,resizable=no,width=565,height=683');return false;"><img src="http://image.inicis.com/mkt/certmark/escrow/escrow_60x60_gray.png" border="0" /></a>-->
+			</td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+</div></div>
+</body>
+</html>d align="left">				  
+					<div class="footer-info">
+						<div class="footer-info-customer">
+							<ul>
+								<li class="footer-info-title">고객센터</li>
+								<li class="footer-info-off">토요일 및 공휴일 휴무</li>
+								<li>운영시간: 평
